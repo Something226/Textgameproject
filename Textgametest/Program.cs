@@ -6,7 +6,7 @@ namespace Textgametest
     {
         static void Main(string[] args)
         {
-           
+           t
 
 
 
