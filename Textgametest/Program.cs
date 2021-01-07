@@ -10,8 +10,7 @@ namespace Textgametest
             //Player stats are determined by character customisation
             Random generator = new Random();
 
-            string userinput;
-
+            int statpoints = 12;
             int playerhp;
             int playerdmg;
             int playerdodge;
@@ -20,8 +19,30 @@ namespace Textgametest
             int enemydmg; 
             int enemydodge;
 
-            System.Console.WriteLine("Welcome to my text based game!\nFirst, you'll have to create a character");
-            
+            //Methods are stated here
+
+            void Charcreation()
+            {   
+                 System.Console.WriteLine("What is your character's name?:");
+                 
+                 string charname = Console.ReadLine();
+                 
+                 System.Console.WriteLine(charname + " huh? That's a cool name I guess");
+                
+                 System.Console.WriteLine("You have " + statpoints + " statpoints\nChoose the stat you would like to improve:");
+
+            }
+
+            void Enemystats()
+            {
+                
+            }
+
+            //Initial info of what the user should do 
+            System.Console.WriteLine("Welcome to my text based game!\nFirst, you'll have to create a character\n");
+
+            Charcreation();
+
 
 
             Console.ReadLine();
